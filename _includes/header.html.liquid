@@ -8,14 +8,13 @@
 
   <nav class="navbar">
     <ul class="nav-links">
-      <li class="nav-link"><a href="{{ "/" | relative_url }}">Home</a></li>
-      <li class="nav-link"><a href="{{ "/feed" | relative_url }}">The Feed</a></li>
-      <li class="nav-link"><a href="{{ "/projects" | relative_url }}">Projects</a></li>
-      <li class="nav-link"><a href="{{ "/me" | relative_url }}">Me</a></li>
+      {% for item in site.data.navigation %}
+        <li class="nav-link {% if page.url == item.link  %} current-page {% endif %}"><a href="{{ item.link | relative_url }}">{{ item.name }}</a></li>
+      {% endfor %}
     </ul>
   </nav>
 
   <a class="menu-toggle">
-    <i class=" fa-solid fa-minus"></i>
+    <i class="fa-solid fa-minus"></i>
   </a>
 </header>

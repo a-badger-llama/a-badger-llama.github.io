@@ -36,7 +36,6 @@
     align-self: stretch;
     background-color: $secondary;
     color: $primary-dark;
-    //display: flex;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -54,6 +53,9 @@
         a {
           padding: 1rem .5rem;
         }
+      }
+      .current-page {
+        color: $white;
       }
     }
   }

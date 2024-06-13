@@ -1,0 +1,10 @@
+- name: the Feed
+  link: /feed.html
+- name: Poems
+  link: /poetry.html
+- name: Shorts
+  link: /shorts.html
+- name: Projects
+  link: /projects.html
+- name: Me
+  link: /me.html

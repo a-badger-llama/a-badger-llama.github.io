@@ -12,6 +12,10 @@ body {
 }
 main {
   padding-top: 120px;
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .lt-text {
@@ -63,26 +67,18 @@ main {
   font-size: .75rem;
 }
 
+
 .image-wrapper {
-  border-right: 1px solid $primary-dark;
-  background-color: $white;
-  height: 30vh;
-  width: 100%;
-}
-.image-wrapper--bg {
-  background-color: $white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-height: 100%;
-  min-width: 100%;
-  z-index: -1;
-}
-.image-wrapper--poster {
-  aspect-ratio: 3 / 4;
-  background-color: $white;
-  margin: 1.5rem 1rem;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 .content-wrapper {

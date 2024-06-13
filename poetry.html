@@ -1,0 +1,13 @@
+---
+layout: default.html
+title: Poetry
+---
+<h1>Poetry</h1>
+
+<ul>
+  {% for poem in site.poems %}
+    <li>
+      <a href="{{ poem.url | relative_url }}">{{ poem.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
