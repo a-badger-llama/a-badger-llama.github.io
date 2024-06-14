@@ -32,6 +32,8 @@ plugins:
 collections:
   poems:
     output: true
+  short_fiction:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

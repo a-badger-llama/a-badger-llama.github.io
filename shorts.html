@@ -1,0 +1,13 @@
+---
+layout: default.html
+title: Short Fiction
+---
+<h1>Short Fiction</h1>
+
+<ul>
+  {% for short in site.short_fiction %}
+    <li>
+      <a href="{{ short.url | relative_url }}">{{ short.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
