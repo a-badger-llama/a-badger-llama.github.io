@@ -8,10 +8,8 @@ layout: default.html
     width: 100%;
     height: 100%;
   }
-
-  iframe > body {
-    margin: 2rem;
-  }
 </style>
+
+<h1 class="section section-heading">{{ page.title }}</h1>
 
 <iframe src="{{ page.asset_location | relative_url }}" frameborder="0"></iframe>

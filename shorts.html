@@ -2,12 +2,20 @@
 layout: default.html
 title: Short Fiction
 ---
-<h1>Short Fiction</h1>
+<div class="section">
+  <h1>Short Fiction</h1>
 
-<ul>
-  {% for short in site.short_fiction %}
-    <li>
-      <a href="{{ short.url | relative_url }}">{{ short.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+  <div class="section">
+    <p>Here is some short fiction I've written. Most of this is flash fiction written as an exercise.</p>
+  </div>
+
+  <h2>Titles:</h2>
+
+  <ul class="section">
+    {% for short in site.categories["short_fiction"] %}
+      <li>
+        <a href="{{ short.url | relative_url }}">{{ short.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

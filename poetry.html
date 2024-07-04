@@ -2,12 +2,20 @@
 layout: default.html
 title: Poetry
 ---
-<h1>Poetry</h1>
+<div class="section">
+  <h1>the Poetry</h1>
 
-<ul>
-  {% for poem in site.poems %}
+  <div class="section">
+    <p>Here are some poems I've written.</p>
+  </div>
+
+  <h2>Titles:</h2>
+
+  <ul class="section">
+    {% for poem in site.categories["poems"] %}
     <li>
       <a href="{{ poem.url | relative_url }}">{{ poem.title }}</a>
     </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+</div>

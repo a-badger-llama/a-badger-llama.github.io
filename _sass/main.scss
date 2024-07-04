@@ -28,11 +28,12 @@ main {
   flex-direction: column;
   padding: 1rem 0;
   position: relative;
+  margin: .5rem 1rem;
 
   .section-heading {
     color: $white-primary;
     font-size: 1.5rem;
-    margin: .5rem 1rem;
+    margin: .5rem 0;
   }
 }
 

@@ -1,6 +1,6 @@
 {%- assign card = include.card -%}
 {%- assign title = card["title"] -%}
-{%- assign date = card["date"] -%}
+{%- assign date_subtitle = card["date_subtitle"] -%}
 {%- assign tagline = card["tagline"] -%}
 {%- assign background_image_path = card["background_image_path"] -%}
 {%- assign image_path = card["image_path"] -%}
@@ -18,7 +18,7 @@
   <div class="content-wrapper">
     <div class="content title-wrapper">
       <h1>{{ title }}</h1>
-      <h4 class="date-subtitle">{{ date }}</h4>
+      <h4 class="date-subtitle">{{ date_subtitle }}</h4>
     </div>
     {%- unless tagline == null -%}
       <h3>{{ tagline }}</h3>
@@ -28,6 +28,5 @@
     {%- unless call-to-action == null -%}
       <button class="content btn primary">Call to Action</button><h3>{{ tagline }}</h3>
     {%- endunless -%}
-
   </div>
 </div>
